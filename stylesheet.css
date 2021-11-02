@@ -1,0 +1,80 @@
+body{
+     background-color:rgb(0, 0, 0) ;
+ 
+}
+
+#header{
+     position:absolute;
+     top:20%;
+     left:30%;
+     opacity: 0.8;
+}
+
+#header h2{
+    color: rgb(255, 255, 255);
+     text-align: center;
+     width: 400px;
+ 
+     
+}
+
+#quote{
+
+    border: rgb(117, 116, 114) 5px solid;
+    padding: 35px 35px 35px 35px;
+    animation-name: Radius;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#header h4{
+    color: rgb(255, 255, 255);
+    border: rgb(116, 115, 114) 2px solid;
+    text-align: center;
+    word-wrap: normal;
+    width: 100px;
+    position: relative;
+    left:11.5em;
+    top: 6em;
+    padding: 15px 15px 15px 15px;
+
+    
+}
+
+#nav{
+    position: absolute;
+    
+}
+
+#nav ul{
+    color:white;
+    list-style: none;
+}
+/* diffrent media platforms */
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    #header{
+        top:30%;
+        left:20%;
+    
+      }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+  #header{
+    top:30%;
+    left:1%;
+
+  }
+  }
+
+  /* The animation code */
+@keyframes Radius {
+    0%   { border-radius:0%;}
+    25%  { border-radius:45%;}
+    50%  {border-radius:75%;}
+    100% {border-radius:0%;}
+  }
+
