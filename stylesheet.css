@@ -1,74 +1,101 @@
-body{
-     background-color:rgb(0, 0, 0) ;
+html,body{
+     background-color:rgb(255, 255, 255) ;
+     height:100%;
+     margin: 0px;
+     overflow-x: hidden;
+     width: 100%;
+     
  
 }
 
-#header{
-     position:absolute;
-     top:20%;
-     left:30%;
-     opacity: 0.8;
+
+#header{ 
+min-height: 100%;
+background-color:rgb(0, 0, 0) ;
+outline: rgb(5, 253, 46) 2px solid;
+
+
+  
 }
 
 #header h2{
     color: rgb(255, 255, 255);
      text-align: center;
      width: 400px;
+     outline: rgb(5, 253, 46) 2px solid;
+     margin-top: 60px;
  
      
 }
 
 #quote{
-
+    width: fit-content;
+    height: fit-content;;
     border: rgb(117, 116, 114) 5px solid;
-    padding: 35px 35px 35px 35px;
     animation-name: Radius;
     animation-duration: 5s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
+    margin: auto;
+    transform: translate(0%,30%);
+    outline: rgb(5, 253, 46) 2px solid;
+    padding: 30px 30px 30px 30px;
 }
 
 #header h4{
     color: rgb(255, 255, 255);
     border: rgb(116, 115, 114) 2px solid;
     text-align: center;
-    word-wrap: normal;
     width: 100px;
-    position: relative;
-    left:11.5em;
-    top: 6em;
     padding: 15px 15px 15px 15px;
-
+    margin: auto;
+    transform: translate(0%,300%);
+    outline: rgb(5, 253, 46) 2px solid;
     
 }
 
-#nav{
-    position: absolute;
-    
+#nav{ 
+  overflow: hidden;
+  background-color: #333;  
 }
 
-#nav ul{
-    color:white;
-    list-style: none;
+#nav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+#Aboutme{
+  margin: auto;
+}
+#profile{
+  width: 250px;
+  height: 250px;
+ 
 }
 /* diffrent media platforms */
 
 @media only screen and (max-width:800px) {
     /* For tablets: */
-    #header{
-        top:30%;
-        left:20%;
-    
-      }
+
   }
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
-  #header{
-    top:30%;
-    left:1%;
 
-  }
-  }
+  #header h2{
+    color: rgb(255, 255, 255);
+     text-align: center;
+     width:250px;
+     
+}
+
+#quote{
+  padding: 20px 20px 20px 20px;
+}
+}
+  
 
   /* The animation code */
 @keyframes Radius {
